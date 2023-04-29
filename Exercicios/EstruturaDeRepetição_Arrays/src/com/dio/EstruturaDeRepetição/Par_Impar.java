@@ -1,0 +1,85 @@
+package com.dio.EstruturaDeRepetição;
+
+import java.util.Scanner;
+
+public class Par_Impar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int quantNumeros;
+		System.out.print("Quantidade de numeros inteiros: ");
+		quantNumeros = sc.nextInt();
+		
+		int []numeros =new int [quantNumeros];
+		
+		int countPar = 0;
+		int countImpar = 0;
+		
+		System.out.println("Digite " + quantNumeros + " números:");
+		for(int i = 0; i < quantNumeros; i++) {
+			numeros[i] = sc.nextInt();
+			
+			if(numeros[i]%2==1) {
+				countImpar++;
+				System.out.println("Número Impar");
+			}else {
+				countPar++;
+				System.out.println("Número Par" );
+			}
+		}
+		System.out.println();
+		System.out.println("Quantidade de números par é: " + countPar);
+		System.out.println("Quantidade de números impar é: " + countImpar);
+		
+		System.out.println();
+		System.out.println("--------OUTRO METODO---------");
+		System.out.println();
+		
+		//Alternativa DoWhile!
+		doWhile();
+		
+		sc.close();
+
+	}
+
+	private static void doWhile() {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int quantNumeros;
+		System.out.print("Quantidade de numeros inteiros: ");
+		quantNumeros = sc.nextInt();
+		
+		int numero;
+		
+		int count = 0;
+		int countPar = 0;
+		int countImpar = 0;
+		
+		System.out.println("Digite " + quantNumeros + " números:");
+		do {
+			numero = sc.nextInt();
+			
+			if(numero%2==1) {
+				countImpar++;
+				System.out.println("Número Impar");
+			}else {
+				countPar++;
+				System.out.println("Número Par" );
+			}
+			count++;
+		}while(count < quantNumeros);
+		
+		System.out.println();
+		System.out.println("Quantidade de números par é: " + countPar);
+		System.out.println("Quantidade de números impar é: " + countImpar);
+		
+		sc.close();
+		
+	}
+
+}

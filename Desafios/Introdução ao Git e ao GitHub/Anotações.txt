@@ -1,0 +1,15 @@
+ ------Comandos------
+
+-git config = A primeira coisa que você deve fazer quando instalar o Git é definir o seu nome de usuário e endereço de e-mail. Isso é importante porque todos os commits no Git utilizam essas informações.
+
+-git clone = Você clona um repositório com git clone [url].
+ 
+-git commit = Armazena o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças.
+ 
+-git checkout = Com o git checkout você pode mudar de branch.
+
+-git push = O git push é o comando em que você transfere commits a partir do seu repositório local para um repositório remoto.
+
+-git add = O comando lhe mostra em qual branch você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README. Caso o arquivo não exista e você execute git status.
+
+-git status = O comando lhe mostra em qual branch você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README.

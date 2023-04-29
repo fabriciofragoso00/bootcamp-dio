@@ -1,0 +1,25 @@
+package com.dio.Arrays;
+
+import java.util.Scanner;
+
+public class Ordem_Inversa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		Scanner sc = new Scanner(System.in);
+		
+		int quant = 6;
+		int [] numeros = new int [quant];
+		
+		System.out.print("Digite 6 numeros: ");
+		for(int i = 1; i < quant; i++) {
+			numeros[i] = sc.nextInt();
+		}
+		for(int i = 0; i < quant; i--) {
+			System.out.print(numeros[i] + " ");
+		}
+	}
+
+}

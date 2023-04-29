@@ -1,0 +1,35 @@
+package com.dio.Arrays;
+
+import java.util.Scanner;
+
+public class Consoantes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String[] consoantes = new String [6];
+		
+		int count = 0;
+		
+		System.out.print("Digite 6 letras: ");
+		for(int i = 0; i < consoantes.length; i++) {
+			consoantes[i] = sc.next();
+			if(consoantes[i] == "a") {
+				count++;
+				}
+			
+			}
+		for(int i = 0; i < consoantes.length; i++) {
+			System.out.print(consoantes[i] + " ");
+			if(consoantes[i] == "a") {
+				count++;
+				}
+		}
+		System.out.println("Quantidade de Consoantes: " + count);
+		
+		sc.close();
+	}
+
+}

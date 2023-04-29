@@ -1,0 +1,31 @@
+package com.dio.EstruturaDeRepetição;
+
+import java.util.Scanner;
+
+public class Nota {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int nota;
+		
+		System.out.print("Nota: ");
+		nota = sc.nextInt();
+		
+		while(nota < 0 || nota > 10) {
+			System.out.println();
+			System.out.println("Valor Invalido, tente novamente..");
+			System.out.println();
+			
+			nota = sc.nextInt();
+			
+		}
+		System.out.println();
+		System.out.println("Valor correto, fim do programa!");
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.dio.EstruturaDeRepetição;
+
+import java.util.Scanner;
+
+public class Par_Impar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int N;
+		System.out.print("Escolha a quantidade de numeros inteiros: ");
+		N = sc.nextInt();
+		
+		int []numeros =new int [N];
+		
+		int countPar = 0;
+		int countImpar = 0;
+		
+		System.out.println("Digite " + N + " números:");
+		for(int i = 0; i < N; i++) {
+			numeros[i] = sc.nextInt();
+			
+			if(numeros[i]%2==1) {
+				countImpar++;
+				System.out.println("Número Impar");
+			}else {
+				countPar++;
+				System.out.println("Número Par" );
+			}
+		}
+		
+		System.out.println("Quantidade de números par é: " + countPar);
+		System.out.println("Quantidade de números impar é: " + countImpar);
+		
+		sc.close();
+
+	}
+
+}

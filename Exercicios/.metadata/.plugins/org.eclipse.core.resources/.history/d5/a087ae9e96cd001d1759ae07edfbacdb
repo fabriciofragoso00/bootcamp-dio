@@ -1,0 +1,9 @@
+package com.dio.criação;
+
+public class Mensagem {
+	
+	public static void Mensagem(double hora) {
+		
+	}
+
+}
